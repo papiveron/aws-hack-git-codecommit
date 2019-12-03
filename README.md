@@ -68,6 +68,6 @@ After you have called the `archive` method, your repository content is copied in
 client = boto3.client('codecommit')
 codecommit = AWSCodeCommit(aws_client, my_repo, logger)
 codecommit.archive('staging')
-print(codecommit.flus_content())
+print(codecommit.flush_content())
 ....
 ```
